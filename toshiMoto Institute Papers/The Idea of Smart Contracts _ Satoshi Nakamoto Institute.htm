@@ -1,0 +1,135 @@
+<!-- extend base layout -->
+<!-- extend base layout -->
+<!--Satoshi Nakamoto Institute is licensed under a Creative Commons
+Attribution-ShareAlike 4.0 International License. Some works may be
+subject to other licenses.-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>
+The Idea of Smart Contracts | Satoshi Nakamoto Institute
+</title>
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    
+      <link rel="stylesheet" type="text/css" href="/static/css/main.css?e1f6fa95" media="screen">
+    
+    <link href="/mempool/feed/" rel="alternate" title="Mempool" type="application/atom+xml">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    
+    <script>
+    if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+      var script = document.createElement('script');
+      script.src = "/static/js/analytics.js"
+      document.getElementsByTagName("head")[0].appendChild(script);
+    }
+    </script>
+  </head>
+  <body>
+    <header>
+  <div class="container">
+    <nav class="navbar navbar-expand-md px-0 mx-auto mb-4">
+      <a class="navbar-brand mr-auto" href="/">Satoshi Nakamoto Institute</a>
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav ml-auto mt-2 mt-md-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="https://satoshi.nakamotoinstitute.org/">The Complete Satoshi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/literature/">Literature</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/research/">Research</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/mempool/">Mempool</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+    <main class="pb-4">
+    
+
+<div class="container">
+	<div class="border-bottom pb-2 mb-3 text-center">
+		<h1>The Idea of Smart Contracts</h1>
+		<h2 class="text-muted">Nick  Szabo</h2>
+		<h4>Originally published in 1997</h4>
+		
+		
+	</div>
+	<span id="CONTENT" class="doc-content">
+
+<p>What is the meaning and purpose of "security"? How does it relate the the relationships we have? I argue that the formalizations of our relationships—especially contracts—provide the blueprint for ideal security.</p>
+
+<p>Many kinds of contractual clauses (such as collateral, bonding, delineation of property rights, etc.) can be embedded in the hardware and software we deal with, in such a way as to make breach of contract expensive (if desired, sometimes prohibitively so) for the breacher. A canonical real-life example, which we might consider to be the primitive ancestor of smart contracts, is the humble vending machine. Within a limited amount of potential loss (the amount in the till should be less than the cost of breaching the mechanism), the machine takes in coins, and via a simple mechanism, which makes a freshman computer science problem in design with finite automata, dispense change and product according to the displayed price. The vending machine is a contract with bearer: anybody with coins can participate in an exchange with the vendor. The lockbox and other security mechanisms protect the stored coins and contents from attackers, sufficiently to allow profitable deployment of vending machines in a wide variety of areas.</p>
+
+<p>Smart contracts go beyond the vending machine in proposing to embed contracts in all sorts of property that is valuable and controlled by digital means. Smart contracts reference that property in a dynamic, often proactively enforced form, and provide much better observation and verification where proactive measures must fall short.</p>
+
+<p>As another example, consider a hypothetical digital security system for automobiles. The smart contract design strategy suggests that we successively refine security protocols to more fully embed in a property the contractual terms which deal with it. These protocols would give control of the cryptographic keys for operating the property to the person who rightfully owns that property, based on the terms of the contract. In the most straightforward implementation, the car can be rendered inoperable unless the proper challenge-response protocol is completed with its rightful owner, preventing theft.</p>
+
+<p>If the car is being used to secure credit, strong security implemented in this traditional way would create a headache for the creditor - the repo man would no longer be able to confiscate a deadbeat's car. To redress this problem, we can create a smart lien protocol: if the owner fails to make payments, the smart contract invokes the lien protocol, which returns control of the car keys to the bank. This protocol might be much cheaper and more effective than a repo man. A further reification would provably remove the lien when the loan has been paid off, as well as account for hardship and operational exceptions. For example, it would be rude to revoke operation of the car while it's doing 75 down the freeway.</p>
+
+<p>In this process of successive refinement we've gone from a crude security system to a reified contract:</p>
+
+<pre>
+(1) A lock to selectively let in the owner and
+    exlude third parties;
+(2) A back door to let in the creditor;
+(3a) Creditor back door switched on only upon nonpayment
+     for a certain period of time; and
+(3b) The final electronic payment permanently switches
+     off the back door.
+</pre>
+
+<p>Mature security systems will be undertaking different behavior for different contracts. To continue with our example, if the automobile contract were a lease, the final payment would switch off leasee access; for purchase on credit, it would switch off creditor access. A security system, by successive redesign, increasingly approaches the logic of the contract which governs the rights and obligations covering the object, information, or computation being secured. Qualitatively different contractual terms, as well as technological differences in the property, give rise to the need for different protocols.</p>
+
+<p>(Derived from <a href="/formalizing-securing-relationships/">"Formalizing and Securing Relationships on Public Networks"</a>, by Nick Szabo)</p>
+
+<p>A <a href="/contract-language/">related article discusses a formal language</a> for analyzing contracts and specifying smart contracts.</p>
+
+<hr>
+
+<p>Please send your comments to nszabo (at) law (dot) gwu (dot) edu</p>
+
+<p>Copyright &copy; 1997 by Nick Szabo<br>
+	Permission to redistribute without alteration hereby granted</p>
+
+</span>
+	<div class="text-center">
+    
+		<a href="/literature/the-idea-of-smart-contracts/">Back</a> | <a href="/literature/">Index</a>
+    
+	</div>
+</div>
+
+    </main>
+    <footer id="footer">
+  <div class="container py-3">
+    <ul class="list-unstyled d-sm-flex flex-wrap align-content-center justify-content-between">
+      <li><a href="/about/">About</a></li>
+      <li><a href="/contact/">Contact</a></li>
+      <li><a href="/donate/">Donate BTC</a></li>
+      <li><a href="/mempool/feed/">Atom feed</a></li>
+      <li><a href="https://github.com/NakamotoInstitute/nakamotoinstitute.org">GitHub</a></li>
+    </ul>
+    <div class="text-muted d-sm-flex mt-3">
+      <a class="my-auto" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+        <img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by-sa/4.0/88x31.png" />
+      </a>
+      <span class="ml-sm-3 d-block d-sm-inline"><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Satoshi Nakamoto Institute</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. Some works may be subject to other licenses.</span>
+    </div>
+  </div>
+</footer>
+    <script src="/static/js/jquery-3.3.1.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/selection-magic.js"></script>
+  </body>
+</html>
